@@ -1,0 +1,121 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Banner Section */
+.banner {
+  background: url('images/banner-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+}
+
+.banner-content p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.banner-content button {
+  padding: 12px 24px;
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Quote Section */
+.quote {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.quote blockquote {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Videos Section */
+.videos {
+  padding: 60px 20px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.video-card img {
+  width: 100%;
+}
+
+/* Membership Section */
+.membership {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.membership-options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 60px 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
