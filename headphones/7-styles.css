@@ -1,0 +1,27 @@
+.service-card {
+  flex: 1;
+  min-width: 240px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  animation: pulse 0.6s ease-in-out;
+}
+.result-card {
+  flex: 1;
+  min-width: 240px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.result-card:hover {
+  animation: bounce 0.8s ease-in-out;
+}

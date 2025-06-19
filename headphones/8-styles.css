@@ -1,0 +1,50 @@
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+}

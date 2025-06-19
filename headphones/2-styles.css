@@ -1,0 +1,65 @@
+/* Our Results Section */
+.our-results {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.our-results h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.our-results p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.result-card {
+  flex: 1;
+  min-width: 240px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.result-card h3 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.result-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Mobile Version */
+@media screen and (max-width: 480px) {
+  .results {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .our-results h2 {
+    font-size: 28px;
+  }
+
+  .our-results p {
+    font-size: 16px;
+  }
+
+  .result-card h3 {
+    font-size: 32px;
+  }
+}

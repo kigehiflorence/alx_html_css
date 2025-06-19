@@ -1,0 +1,65 @@
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(255, 101, 101, 0.4);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Simple animation on button hover */
+.contact-form .cta-button {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.contact-form .cta-button:hover {
+  opacity: var(--button-hover-opacity);
+  transform: translateY(-2px);
+}
+
+/* Mobile Version */
+@media screen and (max-width: 480px) {
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+}
